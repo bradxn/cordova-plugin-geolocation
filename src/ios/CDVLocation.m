@@ -143,11 +143,11 @@
         // higher accuracy, but it's also just spamming the callback with useless reports which drain the battery.
         self.locationManager.distanceFilter = 5;
         // Set desired accuracy to Best.
-        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation;
     } else {
         __highAccuracyEnabled = NO;
         self.locationManager.distanceFilter = 10;
-        self.locationManager.desiredAccuracy = kCLLocationAccuracyThreeKilometers;
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
     }
 }
 
